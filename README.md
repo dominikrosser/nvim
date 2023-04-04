@@ -4,7 +4,7 @@ Nvim, be used in wsl. Most code copied from others.
 - sudo apt-get install zsh
 - chsh -s $(which zsh)
 - sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-- sudo add-apt-repository ppa:neovim-ppa/stable
+- sudo add-apt-repository ppa:neovim-ppa/unstable
 - sudo apt-get update
 - sudo apt-get install neovim
 - git clone --depth 1 https://github.com/wbthomason/packer.nvim\
