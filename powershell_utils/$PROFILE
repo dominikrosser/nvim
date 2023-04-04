@@ -1,0 +1,21 @@
+function ndev {
+    param([string]$subfolder = "")
+    $folder = "OneDrive - ETH Zurich\Documents\Dev"
+    $path = Join-Path $env:userprofile $folder
+    if ($subfolder) {
+    $path = Join-Path $path $subfolder
+    }
+    if (Test-Path $path) {
+	    Set-Location $path
+	    nvim .
+    } else { Write-Host "Folder not found: $path" }
+}
+
+function nconf {
+	$path = Join-Path $env:localappdata "nvim"
+	if (Test-Path $path) {
+		Set-Location $path
+		nvim .
+	} else {
+		Write-Host "Folder not found: $path" }
+}
