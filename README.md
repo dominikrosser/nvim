@@ -10,3 +10,4 @@ Nvim, be used in wsl. Most code copied from others.
 - git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
  - sudo apt-get install build-essential
+ - sudo apt-get install lua5.3
