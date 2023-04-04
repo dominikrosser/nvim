@@ -11,3 +11,10 @@ Nvim, be used in wsl. Most code copied from others.
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
  - sudo apt-get install build-essential
  - sudo apt-get install lua5.3
+- sudo apt-get install fontconfig
+- wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/FiraCode.zip
+- sudo apt-get install unzip
+- unzip FiraCode.zip -d FiraCode
+- sudo mkdir /usr/share/fonts/truetype/FiraCode
+- sudo cp FiraCode/*.ttf /usr/share/fonts/truetype/FiraCode/
+- sudo fc-cache -fv
