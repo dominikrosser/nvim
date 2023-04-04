@@ -18,3 +18,8 @@ Nvim, be used in wsl. Most code copied from others.
 - sudo mkdir /usr/share/fonts/truetype/FiraCode
 - sudo cp FiraCode/*.ttf /usr/share/fonts/truetype/FiraCode/
 - sudo fc-cache -fv
+- sudo apt install tmux
+- curl -sS https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | bash
+- update zsh for zoxide
+- git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
