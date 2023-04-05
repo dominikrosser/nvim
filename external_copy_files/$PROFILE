@@ -19,3 +19,11 @@ function nconf {
 	} else {
 		Write-Host "Folder not found: $path" }
 }
+
+function np2 {
+	$path = "C:\Users\Domi\OneDrive - ETH Zurich\Documents\ETH\SEM 4\Praktikum P2"
+	if (Test-Path $path) {
+		Set-Location $path
+		nvim .
+	} else { Write-Host "Folder not found: $path" }
+}

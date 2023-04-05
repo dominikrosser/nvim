@@ -18,9 +18,18 @@ vim.keymap.set("n", "N", "Nzzzv")
 vim.keymap.set("x", "<leader>p", "\"_dP")
 
 -- asbjornHaland use leader y to copy to the actual clipboard
-vim.keymap.set("n", "<leader>y", "\"+y")
-vim.keymap.set("v", "<leader>y", "\"+y")
-vim.keymap.set("n", "<leader>Y", "\"+Y")
+if package.config:sub(1,1) == "/" then -- Unix-like system (WSL!)
+    --vim.keymap.set("n", "<leader>y", "\"+y :'<,'>w !clip.exe<CR>")
+    --vim.keymap.set("v", "<leader>y", "\"+y :'<,'>w !clip.exe<CR>")
+    --vim.keymap.set("n", "<leader>Y", "\"+Y :'<,'>w !clip.exe<CR>")
+    vim.keymap.set("n", "<leader>y", "\"+y")
+    vim.keymap.set("v", "<leader>y", "\"+y")
+    vim.keymap.set("n", "<leader>Y", "\"+Y")
+else -- Windows
+    vim.keymap.set("n", "<leader>y", "\"+y")
+    vim.keymap.set("v", "<leader>y", "\"+y")
+    vim.keymap.set("n", "<leader>Y", "\"+Y")
+end
 
 -- press " "d to delete without messing up the paste buffer
 vim.keymap.set("n", "<leader>d", "\"_d")
