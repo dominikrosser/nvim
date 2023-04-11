@@ -49,4 +49,6 @@ return require('packer').startup(function(use)
   }
   use( {"meatballs/notebook.nvim"} ) -- not sure if notebook will be any useful
   -- Did not work: use { 'dccsillag/magma-nvim', run = ':UpdateRemotePlugins' }
+
+  use({"github/copilot.vim"})
 end)

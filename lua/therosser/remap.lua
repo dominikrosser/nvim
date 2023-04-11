@@ -1,6 +1,8 @@
 vim.g.mapleader = " "
 vim.g.localleader = ","
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
+vim.keymap.set("n", "<leader>q", "<cmd>q<CR>")
+vim.keymap.set("n", "<leader>w", "<cmd>w<CR>")
 
 -- Highlight move lines up/down (super useful)
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
