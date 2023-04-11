@@ -1,5 +1,6 @@
 # nvim
 Nvim, to be used in wsl (but works in windows as well). Most code copied from others.
+Copy the files in folder { windows: "powershell_utils", wsl: "external_copy_files" } to their respective locations.
 - git clone https://github.com/dominikrosser/nvim ~/.config/nvim
 - sudo apt-get install zsh
 - chsh -s $(which zsh)
@@ -28,3 +29,6 @@ Nvim, to be used in wsl (but works in windows as well). Most code copied from ot
 - sudo npm cache clean -f
 - sudo npm install -g n
 - sudo n latest
+
+## Also setup VSCodium:
+- winget install vscodium
