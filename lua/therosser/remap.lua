@@ -1,6 +1,14 @@
 vim.g.mapleader = " "
 vim.g.localleader = ","
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
+
+-- To move between windows use <leader>w followed by hjkl
+vim.keymap.set("n", "<leader>wj", "<C-w>j")
+vim.keymap.set("n", "<leader>wk", "<C-w>k")
+vim.keymap.set("n", "<leader>wl", "<C-w>l")
+vim.keymap.set("n", "<leader>wh", "<C-w>h")
+
+-- Use <leader>q to quit and <leader>w to save
 vim.keymap.set("n", "<leader>q", "<cmd>q<CR>")
 vim.keymap.set("n", "<leader>w", "<cmd>w<CR>")
 
