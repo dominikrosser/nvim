@@ -1,5 +1,5 @@
 # nvim
-Nvim, be used in wsl. Most code copied from others.
+Nvim, to be used in wsl (but works in windows as well). Most code copied from others.
 - git clone https://github.com/dominikrosser/nvim ~/.config/nvim
 - sudo apt-get install zsh
 - chsh -s $(which zsh)
@@ -23,3 +23,8 @@ Nvim, be used in wsl. Most code copied from others.
 - update zsh for zoxide
 - git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
+- sudo apt install nodejs
+- sudo apt install npm
+- sudo npm cache clean -f
+- sudo npm install -g n
+- sudo n latest
