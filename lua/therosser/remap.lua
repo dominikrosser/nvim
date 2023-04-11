@@ -9,10 +9,11 @@ vim.keymap.set("n", "<leader>wl", "<C-w>l")
 vim.keymap.set("n", "<leader>wh", "<C-w>h")
 
 -- Use <leader>q to quit and <leader>w to save
-vim.keymap.set("n", "<leader>Q", "<cmd>q<CR>")
-vim.keymap.set("n", "<leader>q", vim.cmd.Ex)
-vim.api.nvim_set_keymap('n', '<leader>q', ':w<CR>', {noremap = true, silent = true})
-vim.api.nvim_set_keymap('n', '<leader>wq', ':w<CR>:Ex<CR>', {noremap = true, silent = true})
+vim.keymap.set("n", "<leader>Q", vim.cmd.Ex)
+vim.keymap.set("n", "<leader>q", "<cmd>q<CR>")
+vim.api.nvim_set_keymap('n', '<leader>w', ':w<CR>', {noremap = true, silent = true})
+vim.api.nvim_set_keymap('n', '<leader>wQ', ':w<CR>:Ex<CR>', {noremap = true, silent = true})
+vim.api.nvim_set_keymap('n', '<leader>wq', ':wq<CR>', {noremap = true, silent = true})
  
 -- Highlight move lines up/down (super useful)
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")

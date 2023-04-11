@@ -16,10 +16,10 @@ vim.keymap.set("n", "<leader>ga.", ":G add .<CR>");
 vim.keymap.set("n", "<leader>gl", ":G log<CR>");
 
 -- Git push current branch
-vim.keymap.set("n", "<leader>gp", ":G push<CR>");
+vim.keymap.set("n", "<leader>gp", ":!git push<CR>");
 
 -- Git push origin main
-vim.keymap.set("n", "<leader>gP", ":G push -u origin main<CR>");
+vim.keymap.set("n", "<leader>gP", ":!git push -u origin main<CR>");
 
 -- View older version of current file
 vim.keymap.set("n", "<leader>gd", ":Gvdiffsplit<CR>");
