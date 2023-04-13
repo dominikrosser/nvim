@@ -30,5 +30,13 @@ Copy the files in folder { windows: "powershell_utils", wsl: "external_copy_file
 - sudo npm install -g n
 - sudo n latest
 
+## Setup python managed by miniconda on WSL
+- wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+- bash Miniconda3-latest-Linux-x86_64.sh
+
+
 ## Also setup VSCodium:
 - winget install vscodium
+- Then install plugin VSCode Neovim made by asvetliakov in VSCodium
+- Configure the plugin settings for VSCode Neovim
+- Install plugin Which Key by VSpaceCode in VSCodium
