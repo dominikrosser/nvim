@@ -1,3 +1,4 @@
+
 --
 -- Set $PATH in Neovim based on the operating system
 if package.config:sub(1,1) == "/" then -- Unix-like system
@@ -7,7 +8,9 @@ end
 
 require("therosser")
 if vim.g.vscode then
-  vim.cmd('source $HOME/.config/nvim/vscode/settings.vim')
-  vim.cmd('source $HOME/.config/nvim/vscode/plug-config/easymotion.vim')
+    vim.g.mapleader = " "
+    vim.g.localleader = ","
+    vim.cmd('source $HOME/.config/nvim/vscode/settings.vim')
+    vim.cmd('source $HOME/.config/nvim/vscode/plug-config/easymotion.vim')
 else
 end
