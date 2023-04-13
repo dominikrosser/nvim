@@ -29,6 +29,11 @@ return require('packer').startup(function(use)
         use( 'mbbill/undotree' )
         use( 'tpope/vim-fugitive' )
         use( 'preservim/nerdcommenter' ) -- Comment using <leader>cc, cm, c<space> etc
+        --use { 'CRAG666/betterTerm.nvim' } -- Terminal
+        --use { 's1n7ax/nvim-terminal' } -- Terminal
+        use {"akinsho/toggleterm.nvim", tag = '*', config = function()
+            require("toggleterm").setup()
+        end}
 
         -- Statusline at the bottom
         use {
