@@ -5,6 +5,7 @@ require'nvim-treesitter.configs'.setup {
         "python",
         "html",
         "css",
+        "scss",
         "javascript",
         "c",
         "lua",
