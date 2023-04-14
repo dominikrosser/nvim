@@ -29,6 +29,7 @@ Copy the files in folder { windows: "powershell_utils", wsl: "external_copy_file
 - sudo npm cache clean -f
 - sudo npm install -g n
 - sudo n latest
+- sudo apt install libssl-dev pkg-config
 
 ## Setup python managed by miniconda on WSL
 - wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
