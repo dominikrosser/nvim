@@ -14,6 +14,14 @@ vim.keymap.set("n", "<leader>q", "<cmd>q<CR>")
 vim.api.nvim_set_keymap('n', '<leader>w', ':w<CR>', {noremap = true, silent = true})
 vim.api.nvim_set_keymap('n', '<leader>wQ', ':w<CR>:Ex<CR>', {noremap = true, silent = true})
 vim.api.nvim_set_keymap('n', '<leader>wq', ':wq<CR>', {noremap = true, silent = true})
+
+-- Use <leader>wr  to resize windows
+vim.keymap.set("n", "<leader>rh", "30<C-w>>")
+vim.keymap.set("n", "<leader>rl", "30<C-w><")
+vim.keymap.set("n", "<leader>rk", "10<C-w>+")
+vim.keymap.set("n", "<leader>rj", "10<C-w>-")
+vim.keymap.set("n", "<leader>rm", "<C-w>|")
+vim.keymap.set("n", "<leader>rn", ":vertical resize 80<CR>")
  
 -- Highlight move lines up/down (super useful)
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
