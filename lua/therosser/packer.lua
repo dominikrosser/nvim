@@ -69,5 +69,6 @@ return require('packer').startup(function(use)
         -- Did not work: use { 'dccsillag/magma-nvim', run = ':UpdateRemotePlugins' }
 
         use({"github/copilot.vim"})
+
     end
 end)

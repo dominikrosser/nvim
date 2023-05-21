@@ -8,6 +8,8 @@ vim.keymap.set("n", "<leader>wk", "<C-w>k")
 vim.keymap.set("n", "<leader>wl", "<C-w>l")
 vim.keymap.set("n", "<leader>wh", "<C-w>h")
 
+vim.keymap.set("n", "<leader>we", ":TermExec cmd='python %'<CR>")
+
 -- Use <leader>q to quit and <leader>w to save
 vim.keymap.set("n", "<leader>Q", vim.cmd.Ex)
 vim.keymap.set("n", "<leader>q", "<cmd>q<CR>")
