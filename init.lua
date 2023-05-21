@@ -9,11 +9,11 @@ end
 
 vim.g.python3_host_prog = "/home/domi/miniconda3/envs/p2/bin/python"
 
-require("therosser")
 if vim.g.vscode then
     vim.g.mapleader = " "
     vim.g.localleader = ","
     vim.cmd('source $HOME/.config/nvim/vscode/settings.vim')
     vim.cmd('source $HOME/.config/nvim/vscode/plug-config/easymotion.vim')
 else
+    require("therosser")
 end
